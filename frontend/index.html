@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Xmeme</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--CSS files-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="memelist.css">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body onload="loadStart()">
+    
+        
+    <div>
+        <!--Meme Form-->
+        <section id="meme_form">
+            <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
+                <div class="card card_form text-center">
+                    <h5 class="card-title card-title_form">Add a Meme</h5>
+                    <div class="class-body">
+                        <div class="row ">
+                            <label for="author" class="col-md-3 col-form-label label ">Name:</label>
+                            <div class="col-md-8">
+                            <input type="text"  class="form-control" id="author" >
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <label for="caption" class="col-md-3 col-form-label label">Caption:</label>
+                            <div class="col-md-8">
+                            <textarea type="text" class="form-control" id="caption" ></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row ">
+                            <label for="imgurl" class="col-md-3 col-form-label label">Meme Url:</label>
+                            <div class="col-md-8">
+                            <input type="text"  class="form-control" id="imgurl" >
+                            </div>
+                        </div>
+                        <div id="errorMessage" class="alert alert-danger" role="alert">
+                            This is a danger alert—check it out!
+                        </div>
+                        
+                        <!--Spinner-->
+                        <div style="width:100%; padding:10px; visibility:hidden;">
+                            <div id="overlay2" class="spinner-border text-primary text-center" role="status">
+                                <span class="sr-only"></span>
+                            </div>
+                        </div>
+
+                        <button id="submitbtn" type="submit"  onclick="submitBtn()" class="btn btn-primary rounded-pill">Submit</button>
+                        
+                        <div class="link"><a class="link" href="#meme_list">Meme list</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Spinner-->
+        <div style="display:flex; justify-content: center;">
+            <div id="overlay" class="spinner-border text-light text-center" role="status">
+                <span class="sr-only"></span>
+            </div>
+        </div>
+
+        <!--Meme List-->
+        <section id="meme_list">
+            <div class="container">
+                <div class="row" id="container"></div>
+            </div>
+        </section>
+
+        <section id="footer">
+            <div class="footer">
+                XMEME developed by Shlok Kumar Kyal
+            </div>
+        </section>
+    </div>
+
+        <!--Javascript-->
+        <script src="index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    </body>
+</html>

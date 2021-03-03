@@ -1,0 +1,64 @@
+/*style for meme form and footer*/
+body{
+    background-color: blueviolet;
+    
+}
+.btn{
+    padding:10px 20px;
+}
+
+.link{
+    text-decoration: none;
+    font-size: 15px;
+    color:rgb(139, 139, 139);
+    margin-bottom:20px;
+    margin-top:5px;
+}
+.link:hover{
+    color:rgb(90, 90, 90);
+    text-decoration: underline;
+}
+
+.card_form{
+    width:60%;
+    border-radius:20px;
+    box-shadow: 5px 5px 10px 5px rgb(71, 0, 73);
+}
+@media screen and (max-width: 1000px) {
+    .card_form{
+      width: 80%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .card_form{
+      width: 90%;
+    }
+}
+
+.card-title_form{
+    margin:20px;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.form-control{
+    border-radius: 20px;
+}
+.row{
+    margin:20px;
+}
+.label{
+    align-self: right;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+#errorMessage{
+    display:none;
+}
+.footer{
+    text-align: center;
+    color: white;
+    padding:20px;
+    margin-top: 40px;
+    background-color: rgb(70, 17, 119);
+
+}
